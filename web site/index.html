@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Երևանի Հ4 Ուսումնարան</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <div class="modal fade" id="applyModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ընդունելության հայտ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="applyForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Անուն Ազգանուն</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Հեռախոսահամար</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Էլ. փոստ</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="specialty" class="form-label">Ցանկալի մասնագիտություն</label>
+                            <select class="form-control" id="specialty" required>
+                                <option value="">Ընտրել</option>
+                                <option>Փայտամշակում</option>
+                                <option>Ոսկերչություն</option>
+                                <option>Հրուշակագործություն</option>
+                                <option>Դիզայն</option>
+                                <option>Շինարարություն</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Ուղարկել</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-graduation-cap me-2"></i>ԵԱՈՒ Հ4
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Գլխավոր</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Ուսումնարանի մասին</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#specialties">Մասնագիտություններ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">Նորություններ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Կապնվել</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light ms-3" data-bs-toggle="modal" data-bs-target="#applyModal">
+                            <i class="fas fa-pen me-2"></i>Տալ Հայտարարություն
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="hero">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-3 fw-bold mb-4">Երևանի Հ4 Ուսումնարան</h1>
+                    <p class="lead mb-4">Ստացեք պահանջված մասնագիտություն և դառնաք ապագայի մասնագետ հենց այսօր։</p>
+                    <div class="d-flex gap-3">
+                        <a href="#specialties" class="btn btn-light btn-lg">
+                            <i class="fas fa-search me-2"></i>Մասնագիտություններ
+                        </a>
+                        <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#applyModal">
+                            <i class="fas fa-pen me-2"></i>Տալ Հայտարարություն
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Մեր Ուսումնարանի Մասին</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-history feature-icon"></i>
+                        <h4>35 տարվա փորձ</h4>
+                        <p class="text-muted">Հիմնադրվելով 1989 թվականին՝ մենք ավելի քան երեք տասնամյակ պատրաստում ենք որակյալ մասնագետներ տարբեր ոլորտներում։</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-users feature-icon"></i>
+                        <h4>6500+ շրջանավարտ</h4>
+                        <p class="text-muted">Մեր շրջանավարտները հաջողությամբ աշխատում են Հայաստանի առաջատար ընկերություններում և արտերկրում։</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-chart-line feature-icon"></i>
+                        <h4>92% աշխատանքի տեղավորում</h4>
+                        <p class="text-muted">Մեր շրջանավարտների 92%-ը աշխատանքի է անցնում ուսումն ավարտելուց հետո 6 ամսվա ընթացքում։</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="specialties" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Մեր մասնագիտությունները</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="feature-card h-100">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-chair feature-icon"></i>
+                    </div>
+                    <h4>Փայտամշակում</h4>
+                    <p class="text-muted">Ուսանողները յուրացնում են փայտի գեղարվեստական մշակման տեխնիկան, կահույքի պատրաստում, փորագրություն և վերականգնման աշխատանքներ։ Դասավանդվում են ժամանակակից և ավանդական մեթոդներ։</p>
+                    <ul class="text-muted small mt-2">
+                        <li>Կահույքի դիզայն</li>
+                        <li>Փայտի գեղարվեստական փորագրություն</li>
+                        <li>Վերականգնման աշխատանքներ</li>
+                        <li>Ատաղձագործություն</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#applyModal">Ընդունելություն</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+                <div class="feature-card h-100">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-gem feature-icon"></i>
+                    </div>
+                    <h4>Ոսկերչություն</h4>
+                    <p class="text-muted">Հայկական ավանդական ոսկերչության դպրոց։ Ուսանողները սովորում են թանկարժեք մետաղների և քարերի մշակում, զարդերի նախագծում, 3D մոդելավորում և վերականգնում։</p>
+                    <ul class="text-muted small mt-2">
+                        <li>Թանկարժեք քարերի տեղադրում</li>
+                        <li>Մոմե մոդելավորում</li>
+                        <li>3D նախագծում</li>
+                        <li>Արծաթագործություն</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#applyModal">Ընդունելություն</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="feature-card h-100">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-utensils feature-icon"></i>
+                    </div>
+                    <h4>Խոհարարական</h4>
+                    <p class="text-muted">Պրոֆեսիոնալ խոհարարության դասընթաց։ Ուսանողները սովորում են հայկական և միջազգային խոհանոց, ուտեստների ձևավորում, սննդի անվտանգություն և ռեստորանային բիզնեսի կազմակերպում։</p>
+                    <ul class="text-muted small mt-2">
+                        <li>Հայկական ավանդական խոհանոց</li>
+                        <li>Եվրոպական և ասիական խոհանոց</li>
+                        <li>Ուտեստների դեկոր</li>
+                        <li>Խոհանոցի կառավարում</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#applyModal">Ընդունելություն</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="250">
+                <div class="feature-card h-100">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-cake-candles feature-icon"></i>
+                    </div>
+                    <h4>Հրուշակագործություն</h4>
+                    <p class="text-muted">Ժամանակակից հրուշակագործության արվեստ։ Ուսանողները սովորում են տորթերի, քաղցրավենիքի, աղանդերի պատրաստում, դեկորի տեխնիկա և արտադրության կազմակերպում։</p>
+                    <ul class="text-muted small mt-2">
+                        <li>Մաստիկի և կրեմի դեկոր</li>
+                        <li>Շոկոլադագործություն</li>
+                        <li>Ազգային քաղցրավենիք</li>
+                        <li>Թխվածքաբլիթներ</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#applyModal">Ընդունելություն</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="feature-card h-100">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-car feature-icon"></i>
+                    </div>
+                    <h4>Ավտոմեխանիկ</h4>
+                    <p class="text-muted">Ժամանակակից ավտոմեքենաների ախտորոշում, վերանորոգում և սպասարկում։ Ուսանողները տիրապետում են շարժիչների, էլեկտրոնիկայի և ավտոհամակարգերի վերանորոգմանը։</p>
+                    <ul class="text-muted small mt-2">
+                        <li>Շարժիչների ախտորոշում</li>
+                        <li>Ավտոէլեկտրոնիկա</li>
+                        <li>Կասեցման համակարգեր</li>
+                        <li>Համակարգչային ախտորոշում</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#applyModal">Ընդունելություն</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="350">
+                <div class="feature-card h-100">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-cut feature-icon"></i>
+                    </div>
+                    <h4>Վարսահարդարում</h4>
+                    <p class="text-muted">Պրոֆեսիոնալ վարսահարդարման արվեստ։ Ուսանողները սովորում են սանրվածքներ, ներկում, խնամք և ոճավորում։ Ծանոթանում են ժամանակակից տեխնիկաներին և միտումներին։</p>
+                    <ul class="text-muted small mt-2">
+                        <li>Կանացի և տղամարդու սանրվածքներ</li>
+                        <li>Մազերի ներկում և գունավորում</li>
+                        <li>Հարսանեկան և երեկոյան սանրվածքներ</li>
+                        <li>Մազերի խնամք և բուժում</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#applyModal">Ընդունելություն</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="statistic">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item">
+                        <div class="stat-number">35+</div>
+                        <div class="stat-label">Տարի շուկայում</div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                        <div class="stat-number">6500+</div>
+                        <div class="stat-label">Ավարտողներ</div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <div class="stat-number">45+</div>
+                        <div class="stat-label">Դասախոսներ</div>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Գործընկերներ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="news" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Ուսումնարանի նորություններ</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+                    <div class="card news-card">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             class="card-img-top news-image" alt="Նորություն">
+                        <div class="card-body">
+                            <div class="text-muted small mb-2">15 Մարտ 2026</div>
+                            <h5 class="card-title">Բաց դռների օր ուսումնարանում</h5>
+                            <p class="card-text">Ապրիլի 10-ին տեղի կունենա բաց դռների օր։ Հրավիրում ենք բոլոր ցանկացողներին ծանոթանալու մեր մասնագիտություններին և դասախոսներին։</p>
+                            <a href="#" class="btn btn-primary">Կարդալ ավելին</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card news-card">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             class="card-img-top news-image" alt="Նորություն">
+                        <div class="card-body">
+                            <div class="text-muted small mb-2">5 Մարտ 2026</div>
+                            <h5 class="card-title">Մեր ուսանողների աշխատանքների ցուցահանդես</h5>
+                            <p class="card-text">Ոսկերչության և փայտամշակման բաժնի ուսանողների աշխատանքների ամենամյա ցուցահանդեսը տեղի կունենա ապրիլի 5-12-ը Երևանում։</p>
+                            <a href="#" class="btn btn-primary">Կարդալ ավելին</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+                    <div class="card news-card">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             class="card-img-top news-image" alt="Նորություն">
+                        <div class="card-body">
+                            <div class="text-muted small mb-2">20 Փետրվար 2026</div>
+                            <h5 class="card-title">Նոր համակարգչային դասարան</h5>
+                            <p class="card-text">Ուսումնարանում բացվել է ժամանակակից տեխնիկայով հագեցած համակարգչային դասարան՝ դիզայնի և 3D մոդելավորման ուսուցման համար։</p>
+                            <a href="#" class="btn btn-primary">Կարդալ ավելին</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Կապնվել</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-map-marker-alt feature-icon"></i>
+                        <h5>Հասցե</h5>
+                        <p>Նոր Նորքի 4-րդ զանգված, Գյուլիքևխյան 20, Երևան, Հայաստան</p>
+                        <p class="text-muted small">4-րդ միկրոշրջան, դպրոցի հարևանությամբ</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-phone feature-icon"></i>
+                        <h5>Հեռախոս</h5>
+                        <p>+374 (010) 634-070</p>
+                        <p class="text-muted small">Երկ-Ուրբ, 09:00-15:35</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-envelope feature-icon"></i>
+                        <h5>Էլ․ հասցե</h5>
+                        <p>4usumnaran@mail.ru</p>
+                        <div class="social-links mt-3">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Երևանի Հ4 Ուսումնարան</h5>
+                    <p>Որակյալ կրթություն՝ ավանդույթներ և նորարարություն</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Օգտակար հղումներ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about">Մեր մասին</a></li>
+                        <li><a href="#specialties">Մասնագիտություններ</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#applyModal">Ընդունելություն</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Հետևեք մեզ</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3" style="background-color: rgba(255,255,255,0.1);">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2026 Երևանի Հ4 Ուսումնարան</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/backend/script.js"></script>
+</body>
+</html>
